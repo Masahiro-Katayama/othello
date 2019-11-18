@@ -10,26 +10,27 @@
 <body>
 
   <div class="outer">
-    <table id="table" class="table">
-    </table>
 
-    <div>
-      <button id="clear" onclick="clearBoard()">初期化</button>
+    <table id="table" class="table"></table>
+
+    <div class="buttons">
+      <div class="buttons-inner">
+        <div class="item">
+          <button id="clear" onclick="clearBoard()">初期化</button>
+        </div>
+
+        <div class="item">
+          <button id="random" onclick="decidePlayFirst()">先攻/後攻</button>
+          <span>現在のターン：</span>
+          <span id="start"></span>
+        </div>
+
+        <div class="item">
+          <button id="easymode" onclick="easymode()">イージーモード</button>
+        </div>
+      </div>
     </div>
 
-    <div>
-      <button id="random" onclick="decidePlayFirst()">先攻/後攻</button>
-      <span>現在のターン：</span>
-      <span id="start"></span>
-    </div>
-
-    <div>
-      <button id="easymode" onclick="easymode()">イージーモード</button>
-    </div>
-  </div>
-
-  <div>
-    <p id="result" class="result"></p>
   </div>
   <script src="othello.js"></script>
 </body>
